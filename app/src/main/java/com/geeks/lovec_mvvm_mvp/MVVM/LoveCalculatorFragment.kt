@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.geeks.lovec_mvvm_mvp.R
 import com.geeks.lovec_mvvm_mvp.databinding.FragmentLoveCalculatorBinding
 
 
@@ -39,6 +41,9 @@ class LoveCalculatorFragment : Fragment() {
                 binding.textViewResult.text = "Please enter names for both persons."
             } else {
                 viewModel.calculateLovePercentage(person1, person2)
+            }
+            binding.btnDirection.setOnClickListener{
+                findNavController().navigate(R.id.action_loveCalculatorFragment_to_loveCalculFragment)
             }
         }
     }

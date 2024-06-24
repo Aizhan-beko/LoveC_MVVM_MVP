@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".MVP.LoveCalculFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="@color/red"
+        android:text="Love Calculator MVP"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/name1_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/white"
+        android:hint="Enter your name" />
+
+    <EditText
+        android:id="@+id/name2_edit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Enter your partner's name" />
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Calculate"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textColor="@color/red"/>
+
+</LinearLayout>

@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
     app:startDestination="@id/loveCalculatorFragment">
 
     <fragment
         android:id="@+id/loveCalculatorFragment"
         android:name="com.geeks.lovec_mvvm_mvp.MVVM.LoveCalculatorFragment"
-        android:label="LoveCalculatorFragment" />
+        android:label="LoveCalculatorFragment" >
+
+        <action
+            android:id="@+id/action_loveCalculatorFragment_to_loveCalculFragment"
+            app:destination="@id/loveCalculFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/loveCalculFragment"
+        android:name="com.geeks.lovec_mvvm_mvp.MVP.LoveCalculFragment"
+        android:label="fragment_love_calcul"
+        tools:layout="@layout/fragment_love_calcul" />
 </navigation>
